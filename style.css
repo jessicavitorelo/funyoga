@@ -5,3 +5,13 @@ h1 {
 section {
   padding: 5%
 }
+
+.custom-grid{
+  grid-template-columns: 1fr 300px 2.5fr;
+
+}
+
+.custom-grid-2{
+  grid-template-columns: 2fr 3fr;
+
+}
