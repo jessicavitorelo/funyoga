@@ -40,12 +40,12 @@
 
 </head>
 
-<body>
+<body class="bg-slate-200">
 
   <!-------------------------- header with nav and banner----------------------->
-  <section class=" flex flex-col min-h-screen p-0" style="background-image: url(/images/neutral-image.jpg) ;">
-    <nav class="grid grid-cols-3 items-center border-b">
-      <div class="flex items-center justify-around p-4">
+  <section class=" flex flex-col min-h-[75vh] md:min-h-screen p-0" style="background-image: url(/images/neutral-image.jpg) ;">
+    <nav class="md:grid grid-cols-3 items-center border-b">
+      <div class="hidden md:flex items-center justify-around p-4">
          <a href="#">Nav 1</a>
          <a href="#">Nav 2</a>
          <a href="#">Nav 3</a>
@@ -55,17 +55,17 @@
          <a class="inline-block  text-2xl uppercase content-center" href="#">Logo</a>
       </div>
       
-      <div class="flex items-center justify-around p-4">
+      <div class="hidden md:flex items-center justify-around p-4">
          <a href="#">Nav 1</a>
          <a href="#">Nav 2</a>
          <a href="#">Nav 3</a>
       </div>
     </nav>
 
-    <div class=" p-4 my-auto text-center">
+    <div class=" p-4 my-auto text-center text-white">
       <hr class="w-24 mx-auto pb-5">
       <h1> This is a heading</h1>
-      <h2> This is a subheading</h2>
+      <h2 class="text-sm normal-case"> This is a subheading</h2>
     </div>
 
   </section>
@@ -76,21 +76,20 @@
   <section>
   <h2> Our services</h2>
 
-  <div class="grid grid-cols-3 gap-4">
+  <div class="grid md:grid-cols-3 gap-4 text-center">
 
-    <div class="aspect-square bg-slate-300" style="background-image:url(INSERT LINK HERE);"> </div>
-    <div class="aspect-square bg-slate-300" style="background-image:url(INSERT LINK HERE);"> </div>
-    <div class="aspect-square bg-slate-300" style="background-image:url(INSERT LINK HERE);"> </div>
 
-    <h2> Duis Aute</h2>
-    <h2> Duis Aute</h2>
-    <h2> Duis Aute</h2>
+    <div class="aspect-square bg-slate-300 md:order-1" style="background-image:url(INSERT LINK HERE);"> </div>
+    <h3 class="md:order-2"> Duis Aute</h3>
+    <p class="border-t border-black p-4 md:order-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
 
-    <p class="border-t"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
 
-    <p class="border-t"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
-
-    <p class="border-t"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
+    <div class="aspect-square bg-slate-300 md:order-1" style="background-image:url(INSERT LINK HERE);"> </div>
+    <h3 class="md:order-2"> Duis Aute</h3>
+    <p class="border-t border-black p-4 md:order-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
+    <div class="aspect-square bg-slate-300 md:order-1" style="background-image:url(INSERT LINK HERE);"> </div>
+    <h3 class="md:order-2"> Duis Aute</h3>
+    <p class="border-t border-black p-4 md:order-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
 
   </div>
 
@@ -99,10 +98,10 @@
 
    <section class="p-0">
 
-    <div class="grid custom-grid min-h-[50vh]" style="background-image:url('/images/neutral-image.jpg')">
+    <div class="md:grid custom-grid md:min-h-[50vh] border-t border-black" style="background-image:url('/images/neutral-image.jpg')">
     
     <div></div>
-    <div class="bg-slate-200 flex items-center">
+    <div class="bg-slate-200/50 md:bg-slate-200 flex items-center border-x border-black">
       <div class="m-5">
         <h2>Who we are</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ipsum beatae ea? Facere, beatae ex. Corporis esse temporibus maxime cumque error fugiat aliquam modi repellat, animi molestiae, quos quae eligendi.</p>
@@ -115,7 +114,7 @@
 
     </div>
 
-    <div class="grid grid-cols-6 text-center bg-black p-[1px] gap-[1px]">
+    <div class="grid grid-cols-2 md:grid-cols-6 text-xs text-center bg-black p-[1px] gap-[1px]">
       <div class="bg-slate-200 p-3">Brand Name</div>
       <div class="bg-slate-200 p-3">Brand Name</div>
       <div class="bg-slate-200 p-3">Brand Name</div>
@@ -131,9 +130,9 @@
 <section>
 <div class="text-center max-w-2xl mx-auto">
  <h2>Duis Aute Irure</h2>
- <p class="p-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate maiores nobis accusamus, sed culpa tempore laborum excepturi consectetur, nisi debitis pariatur harum, doloribus minima perferendis commodi earum ab? Reprehenderit, officiis.</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate maiores nobis accusamus, sed culpa tempore laborum excepturi consectetur, nisi debitis pariatur harum, doloribus minima perferendis commodi earum ab? Reprehenderit, officiis.</p>
 </div>
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
   <div class="aspect-square bg-slate-300 border border-black" style="background-image:url(INSERT LINK HERE);"> </div>
   <div class="aspect-square bg-slate-300 border border-black" style="background-image:url(INSERT LINK HERE);"> </div>
   <div class="aspect-square bg-slate-300 border border-black" style="background-image:url(INSERT LINK HERE);"> </div>
@@ -162,10 +161,10 @@
     <div class="p-16">
       <h2>Contact Us</h2>
       <form>
-        <input name="name" type="text" placeholder="name" class=" placeholder:text-inherit border-b border-black block w-full my-4">
-        <input name="email" type="email" placeholder="email" class="placeholder:text-inherit  border-b border-black block w-full my-4">
+        <input name="name" type="text" placeholder="name" class=" bg-inherit placeholder:text-inherit border-b border-black block w-full my-4">
+        <input name="email" type="email" placeholder="email" class=" bg-inherit placeholder:text-inherit  border-b border-black block w-full my-4">
         <label for="message" class="w-full">message</label>
-        <textarea class="w-full resize-none border border-black block" rows="10" id="message">
+        <textarea class="w-full resize-none border border-black block bg-inherit" rows="10" id="message">
         </textarea>
 
         <div class="text-right my-4">
@@ -199,7 +198,7 @@
   
   <div class="p-3">
     <h3>Subscribe to our newsletter</h3>
-    <textarea class="w-full resize-none border border-black block" rows="1" id="message">
+    <textarea class="w-full resize-none border border-black block bg-inherit" rows="1" id="message">
     </textarea>
     <div class="text-right my-4">
       <input type="submit" value="subscribe" class="border border-black px-5">
