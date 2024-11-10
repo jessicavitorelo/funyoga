@@ -40,11 +40,12 @@
 
 </head>
 
-<body class="bg-white">
+<body class="bg-white dark-text">
 
   <!-------------------------- header with nav and banner----------------------->
-  <section class=" flex flex-col min-h-[75vh] md:min-h-screen p-0" style="background-image: url(/images/neutral-image.jpg) ;">
-    <nav class="md:grid grid-cols-3 items-center border-b">
+  <section class=" flex flex-col min-h-[75vh] md:min-h-screen p-0 bg-cover bg-center relative" style="background-image: url(/images/sardinia.jpg) ;">
+    <div class="absolute inset-0 h-full w-full bg-dark opacity-50"></div>
+    <nav class="md:grid grid-cols-3 items-center border-b bg-[#768F98] text-white relative">
       <div class="hidden md:flex items-center justify-around p-4">
          <a href="/">Nav 1</a>
          <a href="#">Nav 2</a>
@@ -62,7 +63,7 @@
       </div>
     </nav>
 
-    <div class=" p-4 my-auto text-center text-white">
+    <div class=" p-4 my-auto text-center text-white relative">
       <hr class="w-24 mx-auto pb-5">
       <h1> This is a heading</h1>
       <h2 class="text-sm normal-case"> This is a subheading</h2>
@@ -74,32 +75,208 @@
 
 <!-------------------------- grid----------------------->
   <section class="p-0">
-    <div class="md:grid grid-cols-2 min-h-[80vh] border border-black">
+    <div class="md:grid grid-cols-2 min-h-[80vh] border border-white text-white">
 
-      <div class="bg-slate-300" style="background-image:url(INSERT LINK HERE);">
-      </div>
-  
-      <div class="p-16">
-        <h2>Duis Aute Irure</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+        <div class="bg-slate-300 bg-cover bg-top" style="background-image:url(/images/vespa.jpg);">
+        </div>
+
+        <div class="p-16 bg-light ">
+            <h2>Duis Aute Irure</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>  
+            <button class=" border border-solid border-white px-5">Find out more</button>
+        </div>
         
+
+
+        <div class="p-16 bg-light ">
+            <h2>Duis Aute Irure</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+            <button class=" border border-solid border-white px-5">Find out more</button>
+
+        </div >
+        
+        <div class="bg-slate-300 bg-cover bg-center" style="background-image:url(/images/beach.jpg);"> 
+        </div>
+
     </div>
-
-    <div class="p-16">
-        <h2>Duis Aute Irure</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
-
-    </div >
-    
-<div class="bg-slate-300" style="background-image:url(INSERT LINK HERE);"> 
-
-</div>
-</div>
-
-</div>
-
-</div>
 </section>
+
+<!-------------------------- services----------------------->
+<section class="p-0">
+    <div class="md:grid grid-cols-4 min-h-[80vh] bg-white p-[1px] gap-[1px]">
+        
+        <div class="bg-slate-300 bg-center bg-cover col-span-2 row-span-2 p-5 flex items-end text-white relative" style="background-image:url(images/beach.jpg);">
+            <div class="absolute inset-0 h-full w-full bg-dark opacity-50"></div> 
+            <div class="relative p-10">
+                <h2 class="uppercase">What we do</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+            </div>
+        </div>
+
+
+        <div class="p-5 bg-white flex items-end">
+            <div>
+                <h2>Duis Aute Irure</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+            </div>
+        </div >
+
+        <div class="p-5 bg-white flex items-end">
+            <div>
+                <h2>Duis Aute Irure</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+            </div>
+        </div >
+
+        <div class="p-5 bg-white flex items-end">
+            <div>
+                <h2>Duis Aute Irure</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+            </div>
+        </div >
+
+        <div class="p-5 bg-white flex items-end">
+            <div>
+                <h2>Duis Aute Irure</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+            </div>
+        </div >
+        
+
+    </div>
+</section>
+
+
+ <!--------------------------Gallery------------------------>
+<section class="p-0">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/beach.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/hotel-room.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/silentbaycharter.jpeg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/window-sea.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/vespa.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/venice-2.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/miramare-2.JPG);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/cinqueterre-2.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/bistromare.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/bistromare.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/bistromare.jpg);"> </div>
+
+      <div class="aspect-square bg-cover bg-center bg-slate-300 border border-white" style="background-image:url(/images/bistromare.jpg);"> </div>
+    
+    </div>
+</section>
+
+ <!--------------------------services------------------------>
+
+ <section class="bg-[#768F98] text-white">
+    <h2 class="text-center "> Our services</h2>
+  
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+  
+  
+      <div class="aspect-square rounded-t-[22vw] rounded-b-3xl bg-slate-300 md:order-1 bg-cover bg-center" style="background-image:url(/images/hotel-room.jpg);"> </div>
+      <h3 class="md:order-2"> Travel Advising</h3>
+      <p class="p-4 md:order-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
+  
+  
+      <div class="aspect-square rounded-t-[22vw] rounded-b-3xl bg-slate-300 md:order-1 bg-cover bg-center" style="background-image:url(/images/wedding.jpg);"> </div>
+      <h3 class="md:order-2"> Wedding Planning</h3>
+      <p class="p-4 md:order-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
+      <div class="aspect-square rounded-t-[22vw] rounded-b-3xl bg-slate-300 md:order-1 bg-center bg-cover" style="background-image:url(/images/miramare-2.JPG);"> </div>
+      <h3 class="md:order-2"> Retreat Organizing</h3>
+      <p class="p-4 md:order-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste quia unde soluta doloremque! Eum saepe facere, quod voluptates dolorum ducimus hic quis neque, numquam aliquam temporibus cumque nostrum impedit.</p>
+  
+    </div>
+  
+    </section>
+
+   <!--------------------------Contact Form------------------------>
+
+   <section class="p-0">
+    <div class="md:grid custom-grid-2 min-h-[80vh] border border-white">
+  
+        <div class="bg-slate-300 bg-cover bg-center" style="background-image:url(/images/beach.jpg);">
+        </div>
+  
+        <div class="p-16">
+            <h2>Contact Us</h2>
+                 <form>
+                    <input name="name" type="text" placeholder="name" class=" bg-inherit placeholder:text-inherit border-b block w-full my-4">
+                    <input name="email" type="email" placeholder="email" class=" bg-inherit placeholder:text-inherit  border-b border-initial block w-full my-4">
+                    <label for="message" class="w-full">message</label>
+                    <textarea class="w-full resize-none border block bg-inherit" rows="10" id="message">
+                    </textarea>
+  
+                    <div class="text-right my-4">
+                    <input type="submit" value="send" class="border px-5">
+         </div>
+                    </form>
+        </div>
+  
+    </div>
+  </section>
+
+
+  <!--------------------------Footer------------------------>
+<section class="bg-[#768F98] text-white">
+    <div class="grid grid-cols-3 md:grid-cols-5">
+    
+      <div class="p-3 max-w-32">
+        <h3>Lorem Ipsum</h3>
+        <p>dolor sit amet consectetur adipisicing elit. Dolorem alias</p>
+      </div>
+    
+      <div class="p-3 max-w-32">
+        <h3>Lorem Ipsum</h3>
+        <p>dolor sit amet consectetur adipisicing elit. Dolorem alias</p>
+      </div>
+    
+      <div class="p-3 max-w-32">
+        <h3>Lorem Ipsum</h3>
+        <p>dolor sit amet consectetur adipisicing elit. Dolorem alias</p>
+      </div>
+    
+      
+      <div class="p-3 col-span-3 md:col-span-2">
+        <h3>Subscribe to our newsletter</h3>
+        <textarea class="w-full resize-none border border-white block bg-inherit" rows="1" id="message">
+        </textarea>
+        <div class="text-right my-4">
+          <input type="submit" value="subscribe" class="border border-white px-5 text-white">
+        </div>
+    
+      </div>
+    </div>
+    
+    </section>
+    
+    <!--------------------------Terms of use------------------------>
+    <section class="border border-white py-3">
+    
+      <div class="grid grid-cols-3">
+    
+      <div> 
+      <p>Terms of Use</p>
+      </div>
+    
+      <div></div>
+    
+      <div></div>
+    
+    </div>
+    
+    </section>
 
 </body>
 
