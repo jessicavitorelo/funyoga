@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <!-- SEO  -->
+  <title>My First Tailwind Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- GOOGLE FONTS -->
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- TAILWIND CUSTOMIZE & EXTEND -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- TAILWIND CUSTOM CLASSES -->
+<style type="text/tailwindcss">
+  @layer components {
+    .btn-primary {
+      @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700;
+    }
+  }
+</style>
+
+  <!-- CUSTOM CSS LINKS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-white">
+
+  <!-------------------------- header with nav and banner----------------------->
+  <section class=" flex flex-col min-h-[75vh] md:min-h-screen p-0" style="background-image: url(/images/neutral-image.jpg) ;">
+    <nav class="md:grid grid-cols-3 items-center border-b">
+      <div class="hidden md:flex items-center justify-around p-4">
+         <a href="/">Nav 1</a>
+         <a href="#">Nav 2</a>
+         <a href="#">Nav 3</a>
+      </div>
+      
+      <div class="text-center">
+         <a class="inline-block  text-2xl uppercase content-center" href="#">Logo</a>
+      </div>
+      
+      <div class="hidden md:flex items-center justify-around p-4">
+         <a href="#">Nav 1</a>
+         <a href="#">Nav 2</a>
+         <a href="#">Nav 3</a>
+      </div>
+    </nav>
+
+    <div class=" p-4 my-auto text-center text-white">
+      <hr class="w-24 mx-auto pb-5">
+      <h1> This is a heading</h1>
+      <h2 class="text-sm normal-case"> This is a subheading</h2>
+    </div>
+
+
+
+  </section>
+
+<!-------------------------- grid----------------------->
+  <section class="p-0">
+    <div class="md:grid grid-cols-2 min-h-[80vh] border border-black">
+
+      <div class="bg-slate-300" style="background-image:url(INSERT LINK HERE);">
+      </div>
+  
+      <div class="p-16">
+        <h2>Duis Aute Irure</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+        
+    </div>
+
+    <div class="p-16">
+        <h2>Duis Aute Irure</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi quis voluptate harum debitis et soluta, repudiandae minus facere nostrum illum laborum dolorum voluptates animi. Excepturi libero est labore animi.</p>
+
+    </div >
+    
+<div class="bg-slate-300" style="background-image:url(INSERT LINK HERE);"> 
+
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+</body>
+
+</html>
